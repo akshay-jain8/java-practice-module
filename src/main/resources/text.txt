@@ -1,0 +1,5 @@
+Hello From SoftDebugs!
+Whatsup Guys...
+
+ctrl+shift+N = for searching library classes
+ctrl+tab = for switching between open classes and interfaces

@@ -1,0 +1,1 @@
+INSERT INTO MyBook(bookName) values('Ikigai');
