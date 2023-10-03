@@ -1,0 +1,38 @@
+server:
+  port: 8282
+
+spring:
+  application:
+    name: softdebugs-learn-java
+
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 0f27d19c993523030efb
+            clientSecret: d8c9e25f935508234f6e46cc0c847431d992eddc
+
+  datasource:
+    name: soft_debugs
+    url: jdbc:mysql://localhost:3306/soft_debugs
+    username: root
+    password: SoftDebugs@88
+    driver-class-name: org.mysql.jdbc.Driver
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+

@@ -31,4 +31,9 @@ public class SecurityController {
     public ResponseEntity<String> welcome() {
         return ResponseEntity.ok("You are now authorized. Welcome to Soft_Debugs");
     }
+
+    @GetMapping("/test")
+    public ResponseEntity<String> test() {
+        return ResponseEntity.ok("This is test api");
+    }
 }
